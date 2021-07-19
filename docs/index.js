@@ -1,11 +1,21 @@
 // import './styles.css';
 // import './assets/img/logo-white.svg';
-import { obtenerProductos } from "./js/api.js";
-// import { saveProductLS } from "./js/localstorage.js.js";
+;
 
 const miModulo = (() => {
     'use strict';
 })();
+
+const apiUrl = 'https://course-api.com/javascript-store-products';
+
+const obtenerProductos = async () => {
+    const productos = await fetch(apiUrl)
+        .then(response => response.json())
+        .catch(err => {
+            console.log('no se puede acceder a la api', err)
+        })
+    return productos;
+}
 
 const bag = document.querySelector('.off-canvas-bag'),
     cerrarBag = document.querySelector('.off-canvas__close'),
