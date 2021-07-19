@@ -1,0 +1,36 @@
+{
+  "name": "comfy",
+  "version": "1.0.0",
+  "description": "1º Instalar las dependencias necesarias\r ```\r     npm install\r ```\r 2º Buildear el proyecto\r ```\r     npm run build\r ```\r 3º Levantar el proyecto\r ```\r     npm run start\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.config.js",
+    "start": "webpack serve --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "Kevin Odar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-preset-minify": "^0.5.1",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
+}
