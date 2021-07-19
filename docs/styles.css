@@ -126,7 +126,7 @@ ul {
 }
 
 .background-image {
-  background-image: url("../assets/img/main-bcg.jpeg");
+  background-image: url("main-bcg.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
